@@ -36,7 +36,7 @@ namespace aulaDeDado
             Escrever("Digite o número de lados do seu dado: ");
             int quantidadeDeLadosDoDado = LerVariavelEConverterParaInteiro();
 
-            ValidaNumeroDeLadosDoDado(quantidadeDeLadosDoDado);
+            quantidadeDeLadosDoDado = ValidaNumeroDeLadosDoDado(quantidadeDeLadosDoDado);
 
 
             Random rd = new Random();
