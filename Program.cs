@@ -6,11 +6,11 @@ namespace aulaDeDado
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite o número de lados do seu dado: ");
+            Escrever("Digite o número de lados do seu dado: ");
             int quantidadeDeLadosDoDado = Convert.ToInt32(Console.ReadLine());
 
             int numeroRolado = RolarDado(quantidadeDeLadosDoDado);
-            Console.WriteLine($"Número do dado rolado é: {numeroRolado}");
+            Escrever($"Número do dado rolado é: {numeroRolado}");
         }
 
         static int RolarDado(int quantidadeDeLadosDoDado)
@@ -18,6 +18,11 @@ namespace aulaDeDado
             Random rd = new Random();
             int numeroRolado = rd.Next(1, quantidadeDeLadosDoDado + 1);
             return numeroRolado;
+        }
+
+        static void Escrever(string texto)
+        {
+            Console.WriteLine(texto);
         }
     }
 }
