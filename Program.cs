@@ -6,7 +6,15 @@ namespace aulaDeDado
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            RolarDado();
         }
+
+        static void RolarDado()
+        {
+            Random rd = new Random();
+            Console.WriteLine("Número aleatório é: " + rd.Next(1, 100));
+
+        }
+
     }
 }

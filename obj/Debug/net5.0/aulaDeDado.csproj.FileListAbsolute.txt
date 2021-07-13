@@ -1,0 +1,16 @@
+C:\projetos\dotnet\aulaDeDado\bin\Debug\net5.0\aulaDeDado.exe
+C:\projetos\dotnet\aulaDeDado\bin\Debug\net5.0\aulaDeDado.deps.json
+C:\projetos\dotnet\aulaDeDado\bin\Debug\net5.0\aulaDeDado.runtimeconfig.json
+C:\projetos\dotnet\aulaDeDado\bin\Debug\net5.0\aulaDeDado.runtimeconfig.dev.json
+C:\projetos\dotnet\aulaDeDado\bin\Debug\net5.0\aulaDeDado.dll
+C:\projetos\dotnet\aulaDeDado\bin\Debug\net5.0\ref\aulaDeDado.dll
+C:\projetos\dotnet\aulaDeDado\bin\Debug\net5.0\aulaDeDado.pdb
+C:\projetos\dotnet\aulaDeDado\obj\Debug\net5.0\aulaDeDado.csproj.AssemblyReference.cache
+C:\projetos\dotnet\aulaDeDado\obj\Debug\net5.0\aulaDeDado.GeneratedMSBuildEditorConfig.editorconfig
+C:\projetos\dotnet\aulaDeDado\obj\Debug\net5.0\aulaDeDado.AssemblyInfoInputs.cache
+C:\projetos\dotnet\aulaDeDado\obj\Debug\net5.0\aulaDeDado.AssemblyInfo.cs
+C:\projetos\dotnet\aulaDeDado\obj\Debug\net5.0\aulaDeDado.csproj.CoreCompileInputs.cache
+C:\projetos\dotnet\aulaDeDado\obj\Debug\net5.0\aulaDeDado.dll
+C:\projetos\dotnet\aulaDeDado\obj\Debug\net5.0\ref\aulaDeDado.dll
+C:\projetos\dotnet\aulaDeDado\obj\Debug\net5.0\aulaDeDado.pdb
+C:\projetos\dotnet\aulaDeDado\obj\Debug\net5.0\aulaDeDado.genruntimeconfig.cache
