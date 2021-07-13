@@ -12,20 +12,20 @@ namespace aulaDeDado
         static void Menu()
         {
             Console.Clear();
-            Console.WriteLine("O que deseja fazer?");
-            Console.WriteLine("-------------------------------");
-            Console.WriteLine("1 - Rolar Dado");
-            Console.WriteLine("2 - Sair");
+            Escrever("O que deseja fazer?");
+            Escrever("-------------------------------");
+            Escrever("1 - Rolar Dado");
+            Escrever("2 - Sair");
 
-            Console.WriteLine("");
-            Console.WriteLine("Selecione uma opção: ");
+            Escrever("");
+            Escrever("Selecione uma opção: ");
             short resposta = short.Parse(Console.ReadLine());
 
             switch (resposta)
             {
                 case 1: RolarDado(); break;
                 case 2: System.Environment.Exit(0); break;
-                default: Console.WriteLine("Opção inválida, Pressione Enter para continuar"); Console.ReadLine(); Menu(); break;
+                default: Escrever("Opção inválida, Pressione Enter para continuar"); Console.ReadLine(); Menu(); break;
             }
 
         }
@@ -36,12 +36,29 @@ namespace aulaDeDado
             Escrever("Digite o número de lados do seu dado: ");
             int quantidadeDeLadosDoDado = LerVariavelEConverterParaInteiro();
 
+            ValidaNumeroDeLadosDoDado(quantidadeDeLadosDoDado);
+
+
             Random rd = new Random();
             int numeroRolado = rd.Next(1, quantidadeDeLadosDoDado + 1);
 
             Escrever($"Número do dado rolado é: {numeroRolado}");
             Console.ReadKey();
             Menu();
+        }
+
+        static int ValidaNumeroDeLadosDoDado(int ladosDoDado)
+        {
+            if (ladosDoDado >= 1 && ladosDoDado <= 100)
+            {
+                return ladosDoDado;
+            }
+            else
+            {
+                Escrever("Valor inválido, o dado deve possuir entre 1 e 100 lados. Escolha um valor correto: ");
+                ladosDoDado = int.Parse(Console.ReadLine());
+                return ValidaNumeroDeLadosDoDado(ladosDoDado);
+            }
         }
 
         static void Escrever(string texto)
