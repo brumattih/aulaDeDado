@@ -42,7 +42,9 @@ namespace aulaDeDado
             Random rd = new Random();
             int numeroRolado = rd.Next(1, quantidadeDeLadosDoDado + 1);
 
+            Escrever("");
             Escrever($"Número do dado rolado é: {numeroRolado}");
+            VerificaNumeroParOuImpar(numeroRolado);
             Console.ReadKey();
             Menu();
         }
@@ -58,6 +60,18 @@ namespace aulaDeDado
                 Escrever("Valor inválido, o dado deve possuir entre 1 e 100 lados. Escolha um valor correto: ");
                 ladosDoDado = int.Parse(Console.ReadLine());
                 return ValidaNumeroDeLadosDoDado(ladosDoDado);
+            }
+        }
+
+        static void VerificaNumeroParOuImpar(int numero)
+        {
+            if (numero % 2 == 0)
+            {
+                Escrever("O número é par!");
+            }
+            else
+            {
+                Escrever("O número é ímpar!");
             }
         }
 
