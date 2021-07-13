@@ -6,13 +6,15 @@ namespace aulaDeDado
     {
         static void Main(string[] args)
         {
-            RolarDado();
+            Console.WriteLine("Digite o número de lados do seu dado: ");
+            int quantidadeDeLadosDoDado = Convert.ToInt32(Console.ReadLine());
+            RolarDado(quantidadeDeLadosDoDado);
         }
 
-        static void RolarDado()
+        static void RolarDado(int quantidadeDeLadosDoDado)
         {
             Random rd = new Random();
-            Console.WriteLine("Número aleatório é: " + rd.Next(1, 100));
+            Console.WriteLine($"Número do dado rolado é: {rd.Next(1, quantidadeDeLadosDoDado + 1)}");
 
         }
 
